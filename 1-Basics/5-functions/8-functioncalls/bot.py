@@ -9,20 +9,13 @@ print("3) Display Upper-case – display the word in upper-case e.g. HELLO ")
 print("4) Display Mirrored – display the word with its mirrored word e.g. Hello | olleH ")
 print("5) Repeat the word x times")
 
-def switch_case(ChoiceNo)
+def switch_case(ChoiceNo):
     switcher = {
         1:BoxDisplay(Word)
         2:LowerCase(Word)
-        3:
-        4:
-        5:
-
-
-
-
-
-
-
+        3:UpperCase(Word)
+        4:Mirrored(Word)
+        5:Repeat(Word,N)
     }
 
 def BoxDisplay(Word):
@@ -43,3 +36,7 @@ def Mirrored(Word):
     Split = Word.split(',')
     for count in range(len(Word)-1 , -1, -1):
         print(Word[count],end=)
+
+def Repeat(Word):
+    for count in range(0,n,1):
+        print(word)
